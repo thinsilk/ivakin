@@ -1,0 +1,326 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'texgyrecursorregular';
+  src: url("../fonts/texgyrecursor-regular-webfont.eot");
+  src: url("../fonts/texgyrecursor-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/texgyrecursor-regular-webfont.woff") format('woff'), url("../fonts/texgyrecursor-regular-webfont.ttf") format('truetype'), url("../fonts/texgyrecursor-regular-webfont.svg#texgyrecursorregular") format('svg');
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  min-width: 640px;
+  min-height: 600px;
+  overflow-x: hidden;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrap:before {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+}
+.i-am {
+  display: inline-block;
+  width: 90%;
+  color: #3e3c3f;
+  text-align: center;
+  /*text-decoration: underline;*/
+  font: 28px/normal 'texgyrecursorregular', sans-serif;
+  vertical-align: middle;
+  margin: 0;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+  width: 277px;
+  height: 487px;
+  background: url("../img/camera.png") no-repeat center;
+  vertical-align: middle;
+  margin-top: 50px;
+}
+.menu > .camera {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.menu > .camera:hover,
+.menu > .camera.active {
+  opacity: 1;
+  cursor: pointer;
+}
+.menu > .text {
+  position: absolute;
+  padding-right: 30px;
+  border-bottom: 2px solid #3e3c3f;
+  color: #3e3c3f;
+  font: 20px/normal 'texgyrecursorregular', sans-serif;
+}
+.menu > .text > span {
+  padding: 0 5px 0 5px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.menu > .text {
+  cursor: pointer;
+}
+.m1 {
+  top: 73px;
+  left: 40px;
+  width: 99px;
+  height: 102px;
+  background: url("../img/m1.png");
+}
+.m2 {
+   top: 174px;
+  left: 40px;
+  width: 100px;
+  height: 85px;
+  background: url("../img/m2.png");
+}
+.m3 {
+  top: 258px;
+  left: 40px;
+  width: 100px;
+  height: 63px;
+  background: url("../img/m3.png");
+}
+.m4 {
+ top: 320px;
+  left: 40px;
+  width: 100px;
+  height: 95px;
+  background: url("../img/m4.png");
+}
+.m5 {
+ top: 76px;
+  left: 138px;
+  width: 95px;
+  height: 125px;
+  background: url("../img/m5.png");
+}
+.m6 {
+ top: 200px;
+  left: 139px;
+  width: 99px;
+  height: 90px;
+  background: url("../img/m6.png");
+  background-position: -1px 0;
+}
+.m7 {
+ top: 289px;
+  left: 139px;
+  width: 86px;
+  height: 60px;
+  background: url("../img/m7.png");
+}
+.m8 {
+  top: 349px;
+  left: 140px;
+  width: 79px;
+  height: 60px;
+  background: url("../img/m8.png");
+}
+.t1 {
+  top: 60px;
+  left: -180px;
+}
+.t2 {
+  top: 203px;
+  left: -210px;
+}
+.t3 {
+  top: 300px;
+  left: -173px;
+}
+.t4 {
+  top: 400px;
+  left: -134px;
+}
+.t5 {
+  top: 60px;
+  right: -125px;
+  padding-right: 0 !important;
+  padding-left: 40px;
+}
+.t6 {
+  top: 170px;
+  right: -230px;
+  padding-right: 0 !important;
+  padding-left: 40px;
+}
+.t7 {
+  top: 270px;
+  right: -183px;
+  padding-right: 0 !important;
+  padding-left: 40px;
+}
+
+.t8 {
+  top: 400px;
+  right: -154px;
+  padding-right: 0 !important;
+  padding-left: 40px;
+}
+.t1:after {
+  position: absolute;
+  top: 23px;
+  right: -33px;
+  width: 35px;
+  height: 36px;
+  background: url("../img/line1.png") no-repeat center;
+  content: '';
+}
+.t2:after,
+.t3:after,
+.t4:after {
+  position: absolute;
+  top: -7px;
+  right: -33px;
+  width: 35px;
+  height: 36px;
+  background: url("../img/line3.png") no-repeat center;
+  content: '';
+}
+.t5:after,
+.t6:after,
+.t7:after {
+  position: absolute;
+  top: 23px;
+  left: -33px;
+  width: 35px;
+  height: 36px;
+  background: url("../img/line2.png") no-repeat center;
+  content: '';
+}
+
+.t8:after {
+  position: absolute;
+  top: -7px;
+  left: -33px;
+  width: 35px;
+  height: 36px;
+  background: url("../img/line4.png") no-repeat center;
+  content: '';
+}
+.t1:hover span,
+.t1.active span {
+  background: #dc3c06;
+  background: rgba(220,60,6,.9);
+}
+.t2:hover span,
+.t2.active span {
+  background: #8ab41b;
+  background: rgba(138,180,27,.9);
+}
+.t3:hover span,
+.t3.active span {
+  background: #e26a07;
+  background: rgba(226,106,7,.9);
+}
+.t4:hover span,
+.t4.active span {
+  background: #06add8;
+  background: rgba(6,173,216,.9);
+}
+.t5:hover span,
+.t5.active span {
+  background: #db9b06;
+  background: rgba(219,155,6,.9);
+}
+.t6:hover span,
+.t6.active span {
+  background: #b807df;
+  background: rgba(184,7,223,.9);
+}
+.t7:hover span,
+.t7.active span {
+  background: #ca1406;
+  background: rgba(202,20,6,.9);
+}
+.t8:hover span,
+.t8.active span {
+  background: #f9f602;
+  background: rgba(249,246,2,.9);
+}
+
+.inner .wrap:before {
+  display: none;
+}
+
+.inner .main {
+  display: block;
+  margin-top: 90px;
+  position: relative;
+}
+
+.content {
+  width: 640px;
+  margin: 80px auto;
+  color: #3e3c3f;
+  text-align: left;
+}
+
+.inner .wrap:after {
+  display: block;
+  position: absolute;
+  width: 277px;
+  height: 487px;
+  top: 50%;
+  margin-top: -244px;
+  right: -140px;
+  background: url("../img/camera.png") no-repeat center;
+  content: '';
+}
+
+.inner .wrap:before {
+  display: block;
+  position: absolute;
+  width: 277px;
+  height: 487px;
+  top: 50%;
+  margin-top: -244px;
+  left: -140px;
+  background: url("../img/camera_2.png") no-repeat center;
+  content: '';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
